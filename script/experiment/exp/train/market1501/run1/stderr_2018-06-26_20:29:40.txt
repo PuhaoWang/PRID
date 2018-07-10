@@ -1,0 +1,10 @@
+Traceback (most recent call last):
+  File "/home/puhaowang/Desktop/MSc_Project/BPM_code/script/experiment/train_pcb.py", line 499, in <module>
+    main()
+  File "/home/puhaowang/Desktop/MSc_Project/BPM_code/script/experiment/train_pcb.py", line 307, in main
+    train_set = create_dataset(**cfg.train_set_kwargs)
+  File "/home/puhaowang/Desktop/MSc_Project/BPM_code/bpm/dataset/__init__.py", line 54, in create_dataset
+    partitions = load_pickle(partition_file)
+  File "/home/puhaowang/Desktop/MSc_Project/BPM_code/bpm/utils/utils.py", line 24, in load_pickle
+    assert osp.exists(path)
+AssertionError

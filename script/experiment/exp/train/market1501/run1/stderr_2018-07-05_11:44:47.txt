@@ -1,0 +1,24 @@
+/home/puhaowang/Desktop/MSc_Project/BPM_code/bpm/model/PCBModel.py:38: UserWarning: nn.init.normal is now deprecated in favor of nn.init.normal_.
+  init.normal(fc.weight, std=0.001)
+/home/puhaowang/Desktop/MSc_Project/BPM_code/bpm/model/PCBModel.py:39: UserWarning: nn.init.constant is now deprecated in favor of nn.init.constant_.
+  init.constant(fc.bias, 0)
+Traceback (most recent call last):
+  File "/home/puhaowang/Desktop/MSc_Project/BPM_code/script/experiment/train_pcb.py", line 499, in <module>
+    main()
+  File "/home/puhaowang/Desktop/MSc_Project/BPM_code/script/experiment/train_pcb.py", line 366, in main
+    TMO(modules_optims)
+  File "/home/puhaowang/Desktop/MSc_Project/BPM_code/bpm/utils/utils.py", line 130, in __call__
+    may_transfer_modules_optims(modules_and_or_optims, self.device_id)
+  File "/home/puhaowang/Desktop/MSc_Project/BPM_code/bpm/utils/utils.py", line 107, in may_transfer_modules_optims
+    item.cuda(device=device_id)
+  File "/home/puhaowang/ENTER/envs/Python27/lib/python2.7/site-packages/torch/nn/modules/module.py", line 249, in cuda
+    return self._apply(lambda t: t.cuda(device))
+  File "/home/puhaowang/ENTER/envs/Python27/lib/python2.7/site-packages/torch/nn/modules/module.py", line 176, in _apply
+    module._apply(fn)
+  File "/home/puhaowang/ENTER/envs/Python27/lib/python2.7/site-packages/torch/nn/modules/module.py", line 176, in _apply
+    module._apply(fn)
+  File "/home/puhaowang/ENTER/envs/Python27/lib/python2.7/site-packages/torch/nn/modules/module.py", line 182, in _apply
+    param.data = fn(param.data)
+  File "/home/puhaowang/ENTER/envs/Python27/lib/python2.7/site-packages/torch/nn/modules/module.py", line 249, in <lambda>
+    return self._apply(lambda t: t.cuda(device))
+RuntimeError: cuda runtime error (35) : CUDA driver version is insufficient for CUDA runtime version at /opt/conda/conda-bld/pytorch_1524577177097/work/aten/src/THC/THCGeneral.cpp:70

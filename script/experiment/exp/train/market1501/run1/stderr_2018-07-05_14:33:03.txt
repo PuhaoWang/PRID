@@ -1,0 +1,8 @@
+Traceback (most recent call last):
+  File "/home/puhaowang/Desktop/MSc_Project/BPM_code/script/experiment/train_pcb.py", line 502, in <module>
+    main()
+  File "/home/puhaowang/Desktop/MSc_Project/BPM_code/script/experiment/train_pcb.py", line 294, in main
+    VT, TMO = set_devices(-1)
+  File "/home/puhaowang/Desktop/MSc_Project/BPM_code/bpm/utils/utils.py", line 150, in set_devices
+    for i in sys_device_ids:
+TypeError: 'int' object is not iterable
